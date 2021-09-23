@@ -1,0 +1,89 @@
+{% extends 'website/base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col-md-12 text-center">
+                <h1 class="h1-style">Edytuj konto</h1>
+            </div>
+        </div>
+        <div class="row align-items-start  edit-main">
+            <div class="col-md-6 ">
+                <form>
+                    <h2 class="h2-style-white text-center">Zmień hasło</h2>
+                    <div class="mb-2 col-md-6 offset-md-3">
+                        <label class="form-label edit-style" for="old-password" name="old-password">Stare hasło</label>
+                        <input type="password" class="form-control" name="old-password">
+                    </div>
+                    <div class="mb-2 col-md-6 offset-md-3">
+                        <label class="form-label edit-style" for="new-password" name="new-password">Nowe hasło</label>
+                        <input type="password" class="form-control" name="new-password">
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button class="btn my-2 btn-find-person">Zmień hasło</button>
+                    </div>
+                </form>
+            </div>    
+            <div class="col-md-6 ">
+                <h2 class="h2-style-white text-center">Zmień e-mail</h2>
+                <form>
+                    <div class="mb-2 col-md-6 offset-md-3">
+                        <label class="form-label edit-style" for="new-email" name="new-email">Nowy e-mail</label>
+                        <input type="password" class="form-control" name="new-email">
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button class="btn my-2 btn-find-person">Zmień e-mail</button>
+                    </div>
+                </form>
+            </div>    
+
+            <div class="col-md-6 ">
+                <h2 class="h2-style-white text-center">Zmień datę urodzin</h2>
+                <form>
+                    <div class="mb-2 col-md-6 offset-md-3">
+                        <label class="form-label edit-style" for="old-email" name="old-email">Podaj datę urodzenia: DD-MM-RR</label>
+                        
+                        <select class="col-auto form-select">
+                            <option value="0">Dzień</option>
+                            {% for i in days %}
+                                <option value="{{i}}">{{i}}</option>
+                            {% endfor %}
+                        </select>
+                                             
+                        <select class="col-auto form-select">
+                            <option value="null">Miesiąc</option>
+                            {% for i in months %}
+                                <option value="{{i}}">{{i}}</option>
+                            {% endfor %}
+                        </select>
+
+                        
+                        <select class="col-auto form-select">
+                            <option value="Null">Rok</option>
+                            {% for i in year %}
+                                <option value="{{i}}">{{i}}</option>
+                            {% endfor %}
+                        </select>
+
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button class="btn my-2 btn-find-person">Zmień e-mail</button>
+                    </div>
+                </form>
+            </div>    
+
+            <div class="col-md-6 text-center ">
+                <h2 class="h2-style-white text-center">Usuń konto</h2>
+                <form>
+                    <div class="mb-2 col-md-6 offset-md-3">
+                        <label class="form-check-label edit-style" for="delete" name="delete">Usuń konto</label>
+                        <input type="checkbox" class="form-check-input" value="True" name="delete">
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button class="btn my-2 btn-find-person">Usuń konto</button>
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </div>
+{% endblock %}

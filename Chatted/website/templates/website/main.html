@@ -1,0 +1,17 @@
+{% extends 'website/base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mt-4">
+                <span class="main_page_content">Chatted<br> <span style="font-size: 0.7em;">czyli prosty sposób na nawiązanie nowych znajomości<br>Założenie jest proste utwórz konto i</span></span>
+            </div>
+        </div>
+        <div class="d-flex row align-items-center">
+            <div class="col-md-12 text-center">
+                <a href="{% url 'no_log_after' %}"><button class="btn btn-dark btn-lg btn-radius mt-5"><span class="button-font">Zacznij swoją przygodę!!!</span></button></a>
+            </div>
+            
+        </div>
+    </div>
+{% endblock %}

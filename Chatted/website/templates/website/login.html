@@ -1,0 +1,29 @@
+{% extends 'website/base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col-md-12 text-center">
+                <h1 class="h1-style">
+                    Logowanie
+                </h1>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-4 offset-md-4 text-center login-content mt-4">
+                <form method="POST" action="{% url 'check_login_data' %}">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="username" class="form-label"><span class="app-content">Nazwa użytkownika</span></label> 
+                        <input type="text" class="form-control" id="username" name="username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password_field" class="form-label"><span class="app-content">Hasło</span></label>
+                        <input type="password" class="form-control" id="password_field" name="password">
+                    </div>
+                    <button type="submit" class="btn btn-lg form-btn">Zaloguj się</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

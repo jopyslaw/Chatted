@@ -1,0 +1,264 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(black, purple, black);
+}
+
+.navbar-color
+{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main_page_content
+{
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 4em;
+}
+
+.btn-radius
+{
+    border-radius: 3em;
+    width: 25em;
+    height: 10em;
+}
+
+.button-font
+{
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 3em;
+}
+
+.footer-content
+{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-radius-small
+{
+    border-radius: 3em;
+    width: 10em;
+    height: 5em;
+}
+
+.button-font-small
+{
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 1em;
+}
+
+.h1-style
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 5em;
+    color: white;
+}
+
+.app-content
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    color: white;
+    text-align: justify;
+}
+
+.box-content
+{
+    color: white;
+    font-size: 7em;
+}
+
+.fb-color
+{
+    transition-duration: 0.5s;
+}
+
+.fb-color:hover
+{
+    color: #3b5998;
+}
+
+.github-color
+{
+    transition-duration: 0.5s;
+}
+
+.github-color:hover
+{
+    color: #333;
+}
+
+.linkedin-color
+{
+    transition-duration: 0.5s;
+}
+
+.linkedin-color:hover
+{
+    color: #0e76a8;
+}
+
+.twitter-color
+{
+    transition-duration: 0.5s;
+}
+
+.twitter-color:hover
+{
+    color: #1DA1F2;
+}
+
+.link-style
+{
+    text-decoration: none;
+    color: white;
+}
+
+.login-content
+{
+    border-radius: 2em;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.form-btn
+{
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition-duration: 0.3s;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+}
+
+.form-btn:hover
+{
+    background-color: rgb(145, 0, 145);
+}
+
+.friends-style
+{
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 1em;
+}
+
+.h3-style
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+}
+
+
+.one-friend-style
+{
+    background-color: rgba(0, 0, 0, 0.2);
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    padding: 0.5em;
+    transition-duration: 0.2s;
+}
+
+.one-friend-style:hover
+{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.border-style
+{
+    border: 2px solid red;
+}
+
+.account-style
+{
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 1em;
+}
+
+.h2-style
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 3.5em;
+}
+
+.h2-style-white
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 3.5em;
+    color: white;
+}
+
+.connect-font
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+}
+
+.btn-find-person
+{
+    background-color: rgba(231, 60, 236, 0.3);
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    border-radius: 1em;
+    color: white;
+    padding: 0.5em;
+    border: 2px solid black;
+}
+
+.btn-find-person:hover
+{
+    background-color: rgba(113, 9, 122, 0.4);
+    color: white;
+}
+
+.edit-main
+{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+}
+
+.edit-style
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    color: white;
+}
+
+.btn-chat-send
+{
+    background-color: rgba(231, 60, 236, 0.3);
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    color: white;
+    border: 2px solid black;
+}
+
+.chat-window-style:disabled
+{
+    background-color: rgba(0,0,0,0.5); 
+    color: white; 
+    font-family: 'Amatic SC', cursive; 
+    font-size: 2em;
+    transition-duration: 0.2s;
+}
+
+.chat-send-window
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    color: black;
+}
+
+
+
+
+

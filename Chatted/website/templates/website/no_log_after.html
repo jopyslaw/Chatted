@@ -1,0 +1,63 @@
+{% extends 'website/base.html' %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row align-items-start">
+            <div class="col-md-12 text-center">
+                <h1 class="h1-style">Witaj {{user.username}}</h1>
+            </div>
+        </div>
+        <div class="row align-items-center mt-2">
+            <div class="col-md-12 ">
+                <div class="col-md-12 account-style">
+                    <h2 class="h2-style text-center">Opcje połączenia</h2>
+                    <form>
+                        <span class="connect-font">Wybierz płeć:</span><br>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="gender-radio" id="gender-radio" value="0" checked>
+                            <label for="gender-radio-all">Dowolna</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="gender-radio" id="gender-radio" value="1">
+                            <label for="gender-radio-women">Kobieta</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="gender-radio" id="gender-radio" value="2">
+                            <label for="gender-radio-man">Mężczyzna</label>
+                        </div>
+                        <span class="connect-font">Wybierz przedział wiekowy:</span><br>
+                        <span class="connect-font">Od:</span>
+                        <div class="col-md-4">
+                            <select class="form-select" aria-label="Age select" id="from_age">
+                                <option value="16" selected>16</option>
+                                {% for i in age %}
+                                    <option value="{{i}}">{{i}}</option>
+                                {% endfor %}
+                            </select>
+                            <span class="connect-font">Do:</span>
+                            <select class="form-select" aria-label="Age select" id="to_age">
+                                <option value="100" selected>100</option>
+                                {% for i in age %}
+                                    <option value="{{i}}">{{i}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-md-12 text-center mt-4">
+                            <button class="btn mt-2 btn-find-person" id="room-name-submit" type="button">Połącz z nieznajomym</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+       
+
+        document.querySelector('#room-name-submit').onclick = function(e) {
+            var gender = document.querySelector('#gender-radio').value;
+            var from_age = document.querySelector('#from_age').value;
+            var to_age = document.querySelector('#to_age').value;
+            window.location.pathname = '/chat/' + gender + from_age + to_age + '/';
+        };
+    </script>
+{% endblock %}
